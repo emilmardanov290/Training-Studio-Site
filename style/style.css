@@ -1,0 +1,588 @@
+/*---GENERAL---   overflow: hidden;*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+:root {
+    --my-orange:#ed563b;
+}
+/*---HEADER---*/
+header {
+    position: relative;
+    height: 100vh;
+}
+header span {color:var(--my-orange);}
+header video {
+    position:absolute;
+    z-index:1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay-content {
+    position: absolute;
+    z-index:2;
+    background-color:hsla(210, 17%, 18%, 0.811);
+    width: 100%;
+    height: 93.5vh;
+    top: 6.5vh; 
+}
+#overlay-nav {
+    position: absolute;
+    z-index:2;
+    background-color:hsla(210, 17%, 18%, 0.723);
+    width: 100%;
+    height: 6.5vh;
+}
+nav {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    z-index: 3;
+    width:100%;
+    height: 6.5vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+nav #logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.1px;
+}
+#menu{display: none;}
+.button-style-1 {
+    background-color: var(--my-orange);
+    border-radius: 2px;
+    color: #fff;
+}
+#title {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 93.5vh;
+}
+#title h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#title h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+/*---CHOOSE PROGRAM---*/
+#choose-program{
+    padding: 5em 0;
+}
+.text-type-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-type-1 h2{font-size:20px;}
+.text-type-1 p{
+    font-size: 12px;
+    color: #7a7a7a;
+    text-align: center;
+}
+.text-type-1 img{
+    margin: 1em;
+}
+.container{
+    width:90%;
+    margin: auto;
+}
+#programs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.program{
+    display: flex;
+    flex-direction:row;
+    margin: 1em 0;
+}
+.program img{
+    width: 4.5em;
+    height: 4.5em;
+    margin-right: 1em;
+}
+.program h4{
+    color: #232d39;
+    font-size: 13px;
+    font-weight: 600;
+}
+.program p{
+    font-size: 10px;
+    color: #7a7a7a;
+}
+.program a{
+    font-size: 10px;
+    color: var(--my-orange);
+}
+/*---BEGIN TODAY---*/
+#begin-today{
+    background: url('../materials/img/cta-bg.jpg');
+    text-align: center;
+    padding: 5em 0;
+}
+#begin-today h2{
+    color: #fff;
+     margin-bottom: 0.3em;
+}
+#begin-today p{
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+#begin-today a{
+    font-size: 10px;
+    padding:0.3em;
+}
+/*---OUR CLASSES---*/
+.container{
+    width:75%;
+    margin: auto;
+}
+#our-classes{
+    padding:5em 0;
+    text-align: center;
+}
+#our-classes h2{font-size:1.5em;}
+#our-classes p{    
+    font-size: 12px;
+    color: #7a7a7a;
+    max-width: 500px;
+    margin: auto;
+}
+.wave{margin: 0.8em auto;}
+#training-classes{
+    display: flex;
+    flex-direction: column;
+}
+#view-all{
+    margin: 0.5em 0 1em 0;
+    padding: 0.8em;
+}
+.training-class{
+    display:flex;
+    padding: 1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0.5em 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+.training-class img{
+    margin: 0 1em 0 0.5em;
+}
+#first-class-description{
+    display: flex;
+    flex-direction: column;
+}
+#first-class-description img{
+    margin: 1em 0;
+    border-radius: 5px;
+}
+#first-class-description h4{
+    font-size: large;
+    text-align: left;
+    margin-bottom: 0.3em;
+}
+#first-class-description p{
+    text-align: left;
+    margin-left: 0;
+}
+#first-class-description a{
+    margin-top:1em;
+    margin-left: 0;
+    max-width: 20vh;
+    padding: 0.4em;
+}
+/*---CLASSES SCHEDULE---*/
+#classes-schedule{
+    display: flex;
+    flex-direction: column;
+    background: url('../materials/img/schedule-bg.jpg') center/cover;
+    height:80%;
+    text-align: center;
+    color: #fff;
+    padding: 5em 0;
+}
+#classes-schedule p{font-size: 12px;}
+#classes-schedule img{margin: 1em auto;}
+#classes-schedule table tr td {
+    border: 1px solid #fff;
+    padding: 1em 1em;
+    word-wrap: break-word; 
+    padding: 0.5em;       
+    font-size: 12px;
+}
+#classes-schedule table{   
+    width: 90%;         
+    height: auto;      
+    margin: auto;
+    table-layout: fixed; 
+}
+#working-days{
+    display: flex;
+    justify-content: center;
+    margin:1em;
+}
+#working-days a{
+    font-size: 10px;
+}
+/*---EXPERT TRAINERS---*/
+#expert-trainers{
+    margin:5em 0;
+    text-align: center;
+}
+#expert-trainers p{
+    max-width: 400px;
+    width:85%;
+    margin: auto;
+    color: #7a7a7a;
+}
+#trainers{
+    display: flex;
+    flex-direction: column;
+    margin:2em 1.5em 0.5em 1.5em;
+}
+.trainer{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    padding: 1.5em 0.5em;
+    gap: 0.5em;
+    border-radius: 3px;
+    max-width:445px;
+    justify-content: center;
+    margin: 1em auto;
+}
+.trainer p{
+    text-align: left;
+}
+.trainer h4{
+    text-align: left;
+    margin-left: 1.7em;
+    font-size: 19px;
+    color: #232d39;
+    font-weight: 600;
+}
+.trainer h6{
+    text-align: left;
+    margin-left: 2.5em;
+    color: #ed563b;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+.trainer img{
+    width: 100%;
+    max-width:350px;
+    margin: auto;
+}
+.trainer ul{
+    margin:0.5em;
+}
+.trainer ul li{
+    display: inline;
+}
+/*---MAP AND FORM---*/
+#map-and-form{
+    display: flex;
+    flex-direction: column;
+    margin:5em auto 0;
+}
+iframe{
+    width:100%;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.32);
+}
+#contact-form{
+    display: flex;
+    background: url('../materials/img/contact-bg.jpg') center/cover;
+    width: 100%;
+    height:50vh;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    border-radius: 5px;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    width:80%;
+    height: 2.5em;
+    outline: none;
+    border-color: #7a7a7a26;
+    border-radius: 3px;
+}
+form textarea{
+    width:80%;
+    height: 5em;
+    outline: none;
+    border: 3px solid #7a7a7a26;
+    border-radius: 3px;
+}
+/*---FOOTER---*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+}
+footer p {
+    font-size: 10px;
+    text-align: center;
+}
+footer span {color:var(--my-orange);}
+@media only screen and (min-width:500px){
+    #classes-schedule{
+        display: flex;
+        flex-direction: column;
+        background: url('../materials/img/schedule-bg.jpg') center/cover;
+        height:80%;
+        text-align: center;
+        color: #fff;
+        padding: 5em 0;
+    }
+    #classes-schedule p{font-size: 12px;}
+    #classes-schedule img{margin: 1em auto;}
+    #classes-schedule table tr td {
+        border: 1px solid #fff;
+        padding: 2em 1em;
+    }
+    #classes-schedule table{   
+        max-width: 700px;  
+    }
+    #working-days{
+        display: flex;
+        justify-content: center;
+        margin:1em;
+    }
+    #working-days a{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:768px) {
+    /*---HEADER---*/
+    nav{
+        justify-content: space-evenly;
+        padding: 0 1em;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    #menu a{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #title h2 {
+    font-size: 3em;
+    }
+    #menu-bar {display: none;}
+    /*---CHOOSE PROGRAM---*/
+    .container{
+        width:90%;
+        margin: auto;
+    }
+    #programs{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+        gap: 1em;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .program{
+        display: flex;
+        flex-direction:row;
+        margin: 1em 0;
+    }
+    /*---BEGIN TODAY---*/
+    #begin-today p{
+        max-width: 550px;
+        margin: auto;
+    }
+    /*---OUR CLASSES---*/
+    #our-classes h2{font-size:1.8em;}
+    /*---CLASSES SCHEDULE---*/
+    /*---EXPERT TRAINERS---*/
+    #expert-trainers{
+        align-items: center;
+        justify-content: center;
+    }
+    #trainers{
+        display: flex;
+        flex-direction: row;
+        margin:2em 1.5em 0.5em 1.5em;
+        justify-content: center;
+    }
+    .trainer{
+        flex-direction: column;
+        margin: 1em;
+    }
+    .trainer img{
+        width: 85%;
+        margin: auto;
+    }
+    /*---MAP AND FORM---*/
+    #map-and-form{
+        flex-direction: row;
+    }
+    iframe{
+        width:50%;
+        box-shadow:none;
+    }
+    #contact-form{
+        display: flex;
+        background: url('../materials/img/contact-bg.jpg') center/cover;
+        width: 50%;
+        height:450px;
+    }
+    form{
+        margin: auto;
+        border-radius: 5px;
+        gap: 0.8em;
+        justify-content: center;
+        align-items: center;
+    }
+    form input{
+        width:80%;
+        height: 2.5em;
+        outline: none;
+        border-color: #7a7a7a26;
+        border-radius: 3px;
+    }
+    form textarea{
+        width:80%;
+        height: 7.5em;
+        outline: none;
+        border: 3px solid #7a7a7a26;
+        border-radius: 3px;
+    }
+        /*---FOOTER---*/
+}
+@media only screen and (min-width:1025px) {
+    /*---HEADER---*/
+    #title h2{font-size: 70px;}
+    #title h6{font-size: 20px;}
+    nav #logo {
+        font-size: 26px;
+    }
+    /*---CHOOSE PROGRAM---*/
+    .container{ 
+        width:60%;
+        margin: auto;
+    }
+    .text-type-1 h2{font-size:30px;}
+    .text-type-1 p{font-size: 16px;}
+    .program h4{
+        color: #232d39;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .program p{
+        font-size: 14px;
+        color: #7a7a7a;
+    }
+    .program a{
+        font-size: 12px;
+        color: var(--my-orange);
+    }
+    /*---BEGIN TODAY---*/
+    /*---OUR CLASSES---*/
+    .container{
+        width:80%;
+        margin: auto;
+    }
+    #flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #our-classes{
+        display: flex;
+        flex-direction: row;
+        padding:5em 0;
+        text-align: center;
+    }
+    #our-classes h2{font-size:2em;}
+    #our-classes p{    
+        font-size: 12px;
+        color: #7a7a7a;
+        max-width: 500px;
+        margin: auto;
+    }
+    .wave{margin: 0.8em;}
+    #training-classes{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+    #view-all{
+        margin: 0.5em 0 0 0;
+        padding: 0.8em;
+        width: 100%;
+    }
+    .training-class{
+        display:flex;
+        padding: 1.5em 1em;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin: 1em 0;
+        align-items: center;
+        width:100%;
+    }
+    .training-class img{
+        margin: 0 1em 0 0.5em;
+    }
+    #first-class-description{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    #first-class-description img{
+        margin: 1em 0;
+    }
+    #first-class-description h4{
+        font-size: large;
+        text-align: left;
+        margin-bottom: 0.3em;
+    }
+    #first-class-description p{
+        text-align: left;
+        margin-left: 0;
+    }
+    #first-class-description a{
+        margin-top:1em;
+    }
+    /*---CLASSES SCHEDULE---*/
+    /*---EXPERT TRAINERS---*/
+    /*---MAP AND FORM---*/
+    /*---FOOTER---*/
+}
